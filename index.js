@@ -123,16 +123,21 @@ Use the hungryDog function and feeding requirements below to do the following:
 function hungryDog(/*add your code here*/){
     /*add your code here*/
   }
+
 let dogAge 
 
-if(dogAge) =<5lbs {
-  return
-  console.log('5% of body weight')
+if(dogWeight) =<5lbs {
+  return '5% of body weight';
 }
-else if(dogAge >5lbs || <10lbs) {
-  console.log()
+else if(dogAge >5lbs || =<10.9lbs) {
+  return '4% of body weight';
 }
-
+else if(dogAge >11lbs || <= 15.9lbs) {
+  return '3% of body weight';
+}
+else {
+  return '2% of body weight';
+}
 
 
 
