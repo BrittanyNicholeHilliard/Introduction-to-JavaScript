@@ -17,13 +17,14 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 27;
 
-const votingAge = 18
-
-if(votingAge >= 18 ) {
-  console.log(true);
+if (votingAge >= 18){
+  return 'true';
 }
-
+else (votingAge <= 17){
+  return 'false';
+}
 
 /*
 Task 1b - Values
@@ -35,8 +36,8 @@ Do the following:
 
    HINT: no function required
 */
-
-
+let sayHi = 'hello';
+let sayBye = 'goodbye';
 
 
 
@@ -62,6 +63,11 @@ Do the following:
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
 */
+
+function multiply(a, b){
+  return a*b;
+}
+console.log(multiply(5, 4));
 
 function multiply(/*add your code here*/){
     /*add your code here*/
