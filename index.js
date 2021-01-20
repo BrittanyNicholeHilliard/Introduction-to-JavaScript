@@ -39,6 +39,10 @@ Do the following:
 let sayHi = 'hello';
 let sayBye = 'goodbye';
 
+sayHi = sayBye 
+
+console.log(sayHi);
+
 
 
 /*
@@ -69,9 +73,6 @@ function multiply(a, b){
 }
 console.log(multiply(5, 4));
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
 
 
 
