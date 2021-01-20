@@ -56,8 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+const stringVar = '1999'
 
-
+console.log(Number(stringVar));
 
 /*
 Task 1d - Multiply
