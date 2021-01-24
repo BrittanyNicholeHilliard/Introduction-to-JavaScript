@@ -69,7 +69,7 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(a, b){
+function multiply(a, b) {
   return a*b;
 }
 console.log(multiply(5 , 4));
@@ -87,11 +87,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(a){
+    return a * 7;
 }
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -120,25 +118,55 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+// function hungryDog(/*add your code here*/){
+//     /*add your code here*/
+//   }
+
+// let dogAge 
+
+// if(dogWeight) =<5lbs && {
+//   return '5% of body weight';
+// }
+// else if(dogAge >5lbs || =<10.9lbs) {
+//   return '4% of body weight';
+// }
+// else if(dogAge >11lbs || <= 15.9lbs) {
+//   return '3% of body weight';
+// }
+// else {
+//   return '2% of body weight';
+// }
+
+function hungryDog(weight, age) {
+  if ( 0.166 <= age <= 0.333) {
+  return weight * .1
   }
-
-let dogAge 
-
-if(dogWeight) =<5lbs {
-  return '5% of body weight';
-}
-else if(dogAge >5lbs || =<10.9lbs) {
-  return '4% of body weight';
-}
-else if(dogAge >11lbs || <= 15.9lbs) {
-  return '3% of body weight';
-}
-else {
-  return '2% of body weight';
-}
-
+  
+  else if (0.334 <= age <= 0.583) {
+  return weight * .05
+  }
+  
+  else if (0.583 <= age <= .0999) {
+  return weight * .04
+  }
+  
+  else if (age >= 1 && weight <= 5) {
+  return weight * .05
+  }
+  
+  else if (age >= 1 && 6<= weight <= 10) {
+  return weight * .04
+  }
+  
+  else if (age >= 1 && 11 <= weight < 15) {
+  return weight * .03
+  }
+  
+  else (age >= 1 && weight >= 15) {
+  return weight * 02 }
+  }
+  
+  hungryDog(10, 2)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
