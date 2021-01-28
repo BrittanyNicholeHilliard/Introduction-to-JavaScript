@@ -278,8 +278,11 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+  for (let i = 99; i > 1; i--) {
+    return '[i] bottles of soda on the wall, [i] bottle of soda, take one down pass it around [i--] bottles of soda on the wall. '
   }
+}
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -297,9 +300,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
-  }
+function grade(score) {
+  if (score >= 90) {
+    return 'You got an A';
+  } else if (score < 90 && score >= 80) {
+    return 'You got a B';
+  } else if (score < 80 && score >= 70) {
+    return 'You got a C';
+  } else if (score < 70 && score >= 60) {
+    return 'You got a D';
+  } else if (score < 60) {
+    return 'You got an F';}
+}
+
+console.log(grade(40));
   
   
 
