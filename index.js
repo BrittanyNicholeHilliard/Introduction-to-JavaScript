@@ -138,15 +138,15 @@ Use the hungryDog function and feeding requirements below to do the following:
 // }
 
 function hungryDog(weight, age) {
-  if ( 0.166 <= age <= 0.333) {
+  if ( 0.166 <= age && age <= 0.333) {
   return weight * .1
   }
   
-  else if (0.334 <= age <= 0.583) {
+  else if (0.334 <= age && age <= 0.583) {
   return weight * .05
   }
   
-  else if (0.583 <= age <= .0999) {
+  else if (0.583 <= age && and <= .0999) {
   return weight * .04
   }
   
@@ -154,11 +154,11 @@ function hungryDog(weight, age) {
   return weight * .05
   }
   
-  else if (age >= 1 && 6<= weight <= 10) {
+  else if (age >= 1 && 6 <= weight && weight <= 10) {
   return weight * .04
   }
   
-  else if (age >= 1 && 11 <= weight < 15) {
+  else if (age >= 1 && 11 <= weight && weight < 15) {
   return weight * .03
   }
   
@@ -190,10 +190,49 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
+//It's actually way easier and more practical to do it this way, so this is what I'm going to do.//
 
-    /*add your code here*/
+let computer = Math.floor * Math.random(Math.floor(2));
+
+
+
+let computer = Math.floor * Math.random(Math.floor(2));
+
+
+function game(user, computer) {
+  if (user === computer) {
+    return "It's a tie!";
+  }
+  if (user === "rock") {
+    if (computer === "scissors") {
+      return "You win!";
+    } else {
+      return "You lose!";
+    }
+  }
 }
+
+if (user === "paper") {
+  if (computer === "rock") {
+    return "You win!";
+  } else {
+    return "You lose!";
+  }
+}
+
+if (user === "scissors") {
+  if (computer === "paper") {
+    return "You win!";
+  } else {
+    return "You lose!";
+  }
+}
+
+compare(user, computer);
+
+
+
+
   
   
 
@@ -211,6 +250,7 @@ Using the miles function below do the following:
 function miles(km){
   return km * .621371 + ' miles'
   }
+
 
 
 //Task 5b - Feet to CM
