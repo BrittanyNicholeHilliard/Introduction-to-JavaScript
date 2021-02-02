@@ -20,10 +20,11 @@ Do the following:
 let votingAge = 27;
 
 if (votingAge >= 18){
-  return 'true';
+  console.log('true');
 }
 else (votingAge <= 17){
-  return 'false';
+  console.log('false');
+
 }
 
 /*
@@ -192,9 +193,7 @@ Use the game function below to do the following:
 
 //It's actually way easier and more practical to do it this way, so this is what I'm going to do.//
 
-let computer = Math.floor * Math.random(Math.floor(2));
-
-
+let user = Math.floor * Math.random(Math.floor(2));
 
 let computer = Math.floor * Math.random(Math.floor(2));
 
@@ -228,7 +227,13 @@ if (user === "scissors") {
   }
 }
 
-compare(user, computer);
+
+
+
+
+
+
+
 
 
 
