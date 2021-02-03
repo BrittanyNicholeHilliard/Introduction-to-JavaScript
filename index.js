@@ -191,12 +191,28 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-//It's actually way easier and more practical to do it this way, so this is what I'm going to do.//
 
-let user = Math.floor * Math.random(Math.floor(2));
+const again = "Y";
 
-let computer = Math.floor * Math.random(Math.floor(2));
+while (again == "Y") {
+  let user = Math.floor * Math.random(Math.floor(2));
 
+  let computer = Math.floor * Math.random(Math.floor(2));
+
+  if (computer === 0) {
+    computer = "rock";
+} else if (computer === 1) {
+    computer = "paper";
+} else {
+    computer = "scissors";
+}  if (user === 0) {
+  user = "rock";
+} else if (user === 1) {
+  user = "paper";
+} else {
+  user = "scissors";
+} 
+}
 
 function game(user, computer) {
   if (user === computer) {
@@ -229,18 +245,6 @@ if (user === "scissors") {
 
 
 
-
-
-
-
-
-
-
-
-
-  
-  
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Metric Converter 
@@ -253,7 +257,7 @@ Using the miles function below do the following:
 */
 
 function miles(km){
-  return km * .621371 + ' miles'
+  return km * .621371 + 'miles'
   }
 
 
@@ -267,7 +271,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-   return cm * 0.0328084 + ' feet'
+   return cm * 0.0328084 + 'feet'
   }
  
 
@@ -282,7 +286,7 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
+function annoyingSong(){
   for (let i = 99; i > 1; i--) {
     return '[i] bottles of soda on the wall, [i] bottle of soda, take one down pass it around [i--] bottles of soda on the wall. '
   }
